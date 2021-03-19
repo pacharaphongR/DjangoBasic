@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <h2>Homepage</h2>
+    <p>Pacharaphong</p>
+   <h1>{{ name }}</h1> 
+   <p>ผู้แต่ง: {{ author }}</p>
+   <h2>ป้ายกำกับ</h2>
+   <ul>
+    {% for i in tags %} 
+    <li><p>{{i}}</p></li>
+
+    {% endfor %}
+
+   </ul>
+   <h2>ระดับความนิยม</h2>
+   {% if rating > 3 %}
+        <h3>ดีมาก</h3>
+
+   {% else %}
+        <h3>ไม่ได้รับความนิยม</h3>
+   {% endif %}
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <!-- <h2>Homepage</h2>
+    <p>Pacharaphong</p>
+   <h1>{{ name }}</h1> 
+   <p>ผู้แต่ง: {{ author }}</p>
+   <h2>ป้ายกำกับ</h2>
+   <ul>
+    {% for i in tags %} 
+    <li><p>{{i}}</p></li>
+
+    {% endfor %}
+
+   </ul>
+   <h2>ระดับความนิยม</h2>
+   {% if rating > 3 %}
+        <h3>ดีมาก</h3>
+
+   {% else %}
+        <h3>ไม่ได้รับความนิยม</h3>
+   {% endif %} -->
+   <h2 align="center" >แสดงข้อมูลบทความ</h2>
+   <table class="table">
+     <thead >
+       <tr>
+         <th scope="col">รหัสบทความ</th>
+         <th scope="col">ชื่อบทความ</th>
+         <th scope="col">รายละเอียด</th>
+
+       </tr>
+     </thead>
+     <tbody>
+          {% for i in posts %}
+       <tr>
+         <th scope="row">{{ i.id }}</th>
+         <td>{{i.name}}</td>
+         <td>{{i.desc}}</td>
+          {% endfor %}
+       </tr>
+     </tbody>
+   </table>
+
+
+{% endblock %}

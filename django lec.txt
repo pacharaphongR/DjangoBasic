@@ -1,0 +1,14 @@
+https://kongruksiamza.medium.com/%E0%B8%9B%E0%B8%B9%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%B2-web-application-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-python-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-django-framework-9d3b7f48718a
+django-admin startproject ชื่อโปร
+cd ชื่อโปร
+ตอนจะเขียน 
+workon (vertual)
+deactivate (vertual) ยกเลิก
+python manage.py runserver
+python manage.py startapp ชื่อแอพ
+
+{% extends 'layout.html' %}
+
+การจะทำ makemigrations ต้อง set installed app ให้มองเห็ฯ
+migrations จะให้มาเช็คอีก ว่าที่ต้องการสร้างจิงมั้ย
+พอได้โครงสร้างก็อัพ migrations โดย python manage.py migrate
